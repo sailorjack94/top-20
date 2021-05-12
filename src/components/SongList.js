@@ -5,7 +5,7 @@ import Song from './Song';
 const SongList = ({top20}) => {
 
     const songNodes = top20.map((song, index) => {
-        return <Song song={song} key={index} />
+        return <Song song={song} key={index} value={index} />
     })
 
     return (
